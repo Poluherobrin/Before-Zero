@@ -190,3 +190,98 @@ header nav ul li.btn a:hover {
   opacity: 1;
   max-height: 300px; /* Достаточно для вашего текста */
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero--info {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .hero--info h1 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        position: static;
+        max-width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* Мобильные устройства (до 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .logo {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hero--info h1 {
+        font-size: 32px;
+    }
+
+    .hero--info p {
+        margin: 10px 0;
+        line-height: 140%;
+    }
+
+    .trending h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .trending .see-all {
+        float: none;
+        display: inline-block;
+        margin: 15px auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Маленькие мобильные устройства (до 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero--info h2 {
+        font-size: 18px;
+    }
+
+    .hero--info .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
